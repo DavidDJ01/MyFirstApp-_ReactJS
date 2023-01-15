@@ -7,12 +7,17 @@
     <title>Document</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <style>
+        a:hover {
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>
     <div id="listKH"></div>
     <script>
-         const h1React = React.createElement("h1" , {title : "Hello"}, React.createElement("a", {href : "https://google.com"}, "Xin Chào Cùng đến google với React"))
+         const h1React = React.createElement("h1" , {title : "Hello"}, React.createElement("a", {href : "https://google.com", style : { textDecoration : "none" }}, "Xin Chào Cùng đến google với React"))
          const listSub = React.createElement("ul", {className : "Sub-nav", style : {
                                                                                 listStyleType : "none",
                                                                                 backgroundColor : "yellow",
